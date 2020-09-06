@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #3b5d57;
+}
+
+.menu {
+    text-align: center;
+    padding: 30px;
+    background-color: #334f49;
+    border-bottom: 1px solid #333;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 10px;
+    color: white;
+}
+
+.menu a:hover {
+    color: #4b88a2;
+    transition: 200ms;
+}
