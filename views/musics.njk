@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Jeremy Zucker</title>
-</head>
-<body>
-    <header>
-        <div class="menu">
-            <a href="index.html">About</a>
-            <a href="musics.html">Musics</a>
-        </div>
-    </header>
+{%extends "layout.njk"%}
 
+{%block head%}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Jeremy Zucker - musics</title> 
+{%endblock%}
+
+{%block content%}
     <section class="cards">
         <div class="card" id="859427938">
             <div class="card_image">
@@ -105,5 +96,4 @@
     </div>
 
     <script src="script.js"></script>
-</body>
-</html>
+{%endblock%}
