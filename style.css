@@ -85,7 +85,7 @@ body {
 
 .cards{
     width: 800px;
-    margin: 40px auto 40px auto;
+    margin: 40px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -111,11 +111,12 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+/* additional class to fix margins from the third column of the second row */
 .nuf {
     margin-top: 30px;
 }
 
-.card_plataform{
+.card_platform{
     background-color: #45798b;
     border-radius: 20px;
     text-align: center;
