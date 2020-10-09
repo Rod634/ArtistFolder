@@ -28,3 +28,7 @@ server.get("/", function(req, res){
 server.get("/musics", function(req, res){
     return res.render("musics");
 });
+
+server.use(function(req, res) {
+    res.status(404).render("not-found");
+});
