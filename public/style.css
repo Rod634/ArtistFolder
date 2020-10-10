@@ -95,6 +95,7 @@ body {
 .card {
     background-color: #437775;
     cursor: pointer;
+    display: grid;
 }
 
 .card img {
@@ -109,11 +110,7 @@ body {
 .card_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-/* additional class to fix margins from the third column of the second row */
-.nuf {
-    margin-top: 30px;
+    align-items: center;
 }
 
 .card_platform{
