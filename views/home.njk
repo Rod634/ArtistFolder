@@ -1,18 +1,22 @@
 {%extends "layout.njk"%}
 
+{%block head%}
+    <title>{{data.title}}</title>
+{%endblock%}
+
 {%block content%}
     <div class="container">
-        <img class="profile" src="http://www.jeremyzuckermusic.com/sites/g/files/aaj4396/f/release/202007/ab67616d0000b2731be266b09bca400621d38743.jpg" alt="Jeremy zucker">
-        <h1>Jeremy Zucker</h1>
-        <h2>Singer</h2>
-        <p>Jeremy Zucker is an American singer-songwriter, best known for his songs "All the Kids Are Depressed" and "Comethru", having accumulated over 300 million streams on Spotify. <a href="https://en.wikipedia.org/wiki/Jeremy_Zucker" target="_blank">Wikipedia</a></p>
+        <img class="profile" src="{{data.image}}" alt="Image of {{data.title}}">
+        <h1>{{data.title}}</h1>
+        <h2>{{data.role}}</h2>
+        <p>{{data.description}}</p>
     </div>
 
     <footer>
         <div class="footer">
-            <a href="https://www.instagram.com/jeremyzucker/" target="_blank">Instagram</a>
-            <a href="https://twitter.com/jeremyzucker" target="_blank">Twitter</a>
-            <a href="http://www.jeremyzuckermusic.com/" target="_blank">Site</a>
+            {%for item in data.link%}
+                <a href="{{item.link}}" target="_blank">{{item.name}}</a>
+            {%endfor%}
         </div>
     </footer>
     
