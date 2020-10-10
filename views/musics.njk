@@ -9,8 +9,13 @@
     <section class="cards">
         {%for music in musics%}
             <div class="card" id="{{music.id}}">
-                <div class="card_image">
+                <div class="card_image {{ 'featured-wrapper' if music.featured }} ">
                     <img src="{{music.image}}" alt="Image of {{music.title}}">
+                    {%if music.featured%}
+                        <div class="featured">
+                            <p>Featured</p>
+                        </div>
+                    {%endif%}
                 </div>
                 <div class="card_title">
                     <h1>{{music.title}}</h1>
