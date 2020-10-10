@@ -4,7 +4,8 @@ module.exports = [
         image: "https://i.scdn.co/image/ab67616d00001e02f8e7554f56f83475b2037d7d",
         title: "Supercuts",
         info: "3 min",
-        platform: "SoundCloud"
+        platform: "SoundCloud",
+        featured: true
     },
     {
         id: "781841995",

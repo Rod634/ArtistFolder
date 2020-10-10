@@ -171,3 +171,19 @@ iframe {
 .giphy{
     margin-top: 10%;
 }
+
+
+/* //Featured\\ */
+
+.featured-wrapper{
+    position: relative;
+}
+
+.featured {
+    background-color: #d04a4a;
+    padding: 3px 8px;
+    border-radius: 16px;
+    position: absolute;
+    top: -8px;
+    left: 3px;
+}
