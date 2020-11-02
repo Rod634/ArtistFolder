@@ -5,6 +5,10 @@
     padding: 0px;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body {
     background-color: #3b5d57;
     font-family: 'Roboto Condensed', sans-serif;
@@ -12,15 +16,15 @@ body {
 
 .menu {
     text-align: center;
-    padding: 30px;
+    padding: 3rem;
     background-color: #334f49;
     border-bottom: 1px solid #333;
 }
 
 .menu a {
     text-decoration: none;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 3rem;
+    line-height: 4rem;
     margin: 0 10px;
     color: white;
 }
@@ -36,28 +40,29 @@ body {
 }
 
 .profile {
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 70px;
+    height: 30rem;
+    border-radius: 50rem;
+    margin-top: 8rem;
 }
 
 .container h1 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .container h2 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
     font-weight: bold;
 }
 
 .container p {
-    font-size: 16px;
-    max-width: 500px;
-    margin: 30px auto;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 30%;
+    margin: 3% auto;
 }
 
 .container a {
@@ -66,13 +71,15 @@ body {
 
 .footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .footer a {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
     color: white;
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 0px 1rem;
     border-bottom: 2px solid #04b2f7;
 }
 
@@ -84,11 +91,11 @@ body {
 /* //CARDS\\ */
 
 .cards{
-    width: 800px;
-    margin: 40px auto;
+    width: 60vw;
+    margin: 4rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     color: white;
 }
 
@@ -104,10 +111,14 @@ body {
 
 .card_title,
 .card_info {
-    padding: 12px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    padding: 1.2rem;
 }
 
 .card_info {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -115,7 +126,7 @@ body {
 
 .card_platform{
     background-color: #45798b;
-    border-radius: 20px;
+    border-radius: 2rem;
     text-align: center;
     filter: brightness(90%);
 }
@@ -172,7 +183,6 @@ iframe {
     margin-top: 10%;
 }
 
-
 /* //Featured\\ */
 
 .featured-wrapper{
@@ -181,9 +191,39 @@ iframe {
 
 .featured {
     background-color: #d04a4a;
-    padding: 3px 8px;
+    padding: 0.3rem 0.8rem;
     border-radius: 16px;
     position: absolute;
-    top: -8px;
-    left: 3px;
+    top: -0.8rem;
+    left: 0.3rem;
+}
+
+/* //media queries\\ */
+@media(max-width:768px){
+    .container p {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        max-width: 60%;
+        margin: 3% auto;
+    }
+
+    .footer a {
+        font-size: 1.2rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media(max-width:530px){
+    .modal {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+
+@media(max-width:430px){
+    .cards{
+        width: 80vw;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
